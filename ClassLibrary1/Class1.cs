@@ -259,10 +259,83 @@ namespace ClassLibrary1
                 //Assert
                 Assert.AreEqual(expectedResult, actualResult);
             }
+        public void GetDivision_Input15point0and3point0_Returns5point0()
+        {
 
+            //Arrange
+            double number1 = 15.0;
+            double number2 = 3.0;
 
+            double expectedResult = number1 / number2;
 
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
         }
+
+        [Test]
+        public void GetDivision_Input1point0and3point0_Returns0point3()
+        {
+
+            //Arrange
+            double number1 = 1;
+            double number2 = 3;
+
+            double expectedResult = number1 / number2;
+
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetDivision_Input2point0and1point0_Returns2point0()
+        {
+
+            //Arrange
+            double number1 = 2.0;
+            double number2 = 1.0;
+
+            double expectedResult = number1 / number2;
+
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+        [Test]
+        public void GetDivision_Input9point0and3point0_Returns3point0()
+        {
+
+            //Arrange
+            double number1 = 9.0;
+            double number2 = 3.0;
+
+            double expectedResult = number1 / number2;
+
+            Calc testCalc = new Calc(number1, number2);
+
+            //Act
+            double actualResult = testCalc.GetDivision();
+
+            //Assert
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+
+
+
     }
+}
 
 
