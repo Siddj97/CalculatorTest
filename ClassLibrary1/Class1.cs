@@ -285,7 +285,7 @@ namespace ClassLibrary1
             double number1 = 1;
             double number2 = 3;
 
-            double expectedResult = number1 / number2;
+             double expectedResult = number1 / number2;
 
             Calc testCalc = new Calc(number1, number2);
 
