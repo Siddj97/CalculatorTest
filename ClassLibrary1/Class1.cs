@@ -274,7 +274,7 @@ namespace ClassLibrary1
             double actualResult = testCalc.GetDivision();
 
             //Assert
-            Assert.AreEqual(expectedResult, actualResult);
+              Assert.AreEqual(expectedResult, actualResult);
         }
 
         [Test]
